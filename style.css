@@ -1,0 +1,287 @@
+/* 1. Positioning */
+* {
+  padding: 0;
+  margin: 0px auto 0px auto;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Georgia, Times, serif;
+  color: rgb(130, 77, 142);
+  max-width: 940px;
+  min-width: 720px;
+  padding: 40px;
+  border: 5px dotted rgb(202, 74, 154);
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  background-color: #ffffff;
+}
+
+/* 2. Block model */
+
+/* container settings */
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.wrapper > * {
+  padding: 10px;
+}
+
+/* header settings */
+
+.page-header nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header ul {
+  list-style-type: none;
+  display: flex;
+  order: -1;
+  width: 200%;
+  margin-top: 0px;
+  margin-bottom: 30px;;
+  align-items: stretch;
+  justify-content: space-around;
+}
+
+/* footer settings */
+
+.page-header ul li:not(:last-child) {
+  padding-right: 30px;
+}
+
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  background: var(--main-white-color);
+}
+
+.page-footer ul {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.page-footer ul li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.page-footer ul {
+  display: flex;
+  order: -1;
+  width: 200%;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  list-style-type: none;
+  align-items: stretch;
+  justify-content: space-around;
+}
+
+#contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 3. Font/Text settings */
+
+.surname {
+  font-family: 'Dancing Script', cursive;
+  font-size: 600%;
+  color: rgb(202, 74, 154);
+}
+
+.name {
+  font-family: 'Dancing Script', cursive;
+  font-size: 700%;
+  height: 250px;
+  color: rgb(202, 74, 154);
+}
+
+ul {
+  list-style-type: '★';
+}
+
+a:link {
+  font-size: 100%;
+  text-decoration: none;
+  color: rgb(202, 74, 154);
+}
+
+a:visited {
+  color: rgb(21, 139, 144);
+}
+
+a:hover {
+  text-decoration: underline;
+  color: rgb(202, 74, 154);
+}
+
+a:focus {
+  color: rgb(21, 139, 144);;
+}
+
+a:active {
+  color: rgb(21, 139, 144);
+}
+
+#aboutme {
+  font-style: italic;
+  max-width: 100%;
+  font-size: 100%;
+  text-align: center;
+}
+
+.page-footer .button {
+  font-size: 200%;
+  text-align: center;
+}
+
+/* 4. Design */
+
+button {
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+button p {
+  height: 15px; /* to bring text "Get in Touch to center of a button"*/
+}
+
+/* header settings */
+
+.page-header {
+  background-color: white;
+}
+
+.page-header .button {
+  padding: 10px;
+  border: 4px dotted rgb(202, 74, 154);
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-color: white;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1em;
+  color: rgb(130, 77, 142);
+}
+
+/* main settings */
+
+.page-main {
+  display: flex;
+  flex-direction: column;
+  min-height: 350px;
+  justify-content: center;
+  flex-grow: 1; /* it expands covering the available space inside the container */
+  padding: 3rem;
+  background-color: rgb(255, 255, 255);
+  font-family: Georgia, Times, serif;
+  line-height: 2em;
+  color: rgb(130, 77, 142);
+}
+
+.content {
+  justify-content: space-around;
+  border: 4px dotted rgb(130, 77, 142);;
+  margin: 6px;
+  padding: 3rem;
+  line-height: 2em;
+  color: rgb(130, 77, 142);
+}
+
+.page-main h2 {
+  font-family: 'Dancing Script', cursive;
+  color: rgb(21, 139, 144);
+}
+
+.page-main .submit {
+  background-color: pink;
+}
+
+/* footer */
+footer {
+  height: 20vh;
+  background: #ffffff;
+}
+
+.button {
+  height: 50px;
+  padding: 10px;
+  border: 4px dotted rgb(202, 74, 154);
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-color: white;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1em;
+  color: rgb(130, 77, 142);
+}
+
+/* 5. Other */
+
+html {
+  scroll-behavior: smooth;
+}
+
+pre code {
+  display: block;
+  padding: 20px;
+  font-family: "Courier New", Courier, monospace;
+  background-color: #eee;
+  border: 1px solid #999;
+}
+
+p {
+  line-height: 1.4em;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  font-family: 'Dancing Script', cursive;
+  font-size: 150%;
+  color: rgb(202, 74, 154);
+}
+
+label {
+  font-weight: bold;
+  font-family: 'Dancing Script', cursive;
+  color: rgb(21, 139, 144);
+}
+
+.footer-add-ons {
+  display: flex;
+  flex-direction: column;
+  background: var(--main-white-color);
+}
+
+.footer-add-ons ul {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.footer-add-ons ul {
+  display: flex;
+  order: -1;
+  width: 170%;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  list-style-type: none;
+  align-items: stretch;
+  justify-content: space-around;
+}
