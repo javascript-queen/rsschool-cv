@@ -1,3 +1,3 @@
 # rsschool-cv
 
-https://justannakuznetsova.github.io/rsschool-cv/cv
+My CV markdown: https://justannakuznetsova.github.io/rsschool-cv/cv
